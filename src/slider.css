@@ -1,0 +1,11 @@
+*{
+    background-color: #efb8b8;
+}
+
+.demoslider img{
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    /* display: flex; */
+
+}

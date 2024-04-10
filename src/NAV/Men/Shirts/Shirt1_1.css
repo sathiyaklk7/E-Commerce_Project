@@ -1,0 +1,224 @@
+.content_img {
+    width: 200px;
+    height: 200px;
+}
+
+.Main_Shirt1_1 {
+    display: flex;
+    gap: 20px;
+    background-color: #808080;
+}
+
+.big {
+    width: 850px;
+    height: 720px;
+    margin-left: 40px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 15px 5px;
+
+}
+
+.Sub_Main_Shirt1_1 img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    box-shadow: 0px 0px 10px 2px;
+    border-radius: 5px;
+}
+
+.Sub_Main_Shirt1_1 {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    height: 760px;
+    /* margin-left: 330px; */
+}
+
+.Main_Shirt1_1_content {
+    display: block;
+    background-color: #e4c176be;
+}
+
+.Shirt1_1_rating {
+    display: flex;
+    gap: 0px;
+    justify-content: space-evenly;
+}
+
+.Shirt1_1_rating button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border: 2px black solid;
+    transition: 0.6s all;
+}
+
+.Shirt1_1_rating button:hover {
+    background-color: #ff3737;
+    color: aliceblue;
+    transition: 0.6s all;
+}
+
+.Shirt1_1_rating h1 {
+    font-size: 50px;
+    margin-top: -8px;
+    margin-bottom: 25px;
+}
+
+.Rating_p {
+    font-size: 30px;
+    margin-top: -10px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-shadow: 3px -4px 4px rgb(77, 52, 3);
+    
+}
+
+
+.select_size_h2 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-shadow: 3px -4px 4px rgb(77, 52, 3);
+    margin-top: -20px;
+}
+
+.select_size_btn button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 2px #000;
+    transition: 0.6s all;
+    margin-top: -25px;
+
+
+}
+
+.select_size_btn button:hover {
+    color: aliceblue;
+    background-color: #ff3737;
+    transition: 0.6s all;
+
+}
+
+.select_size_btn {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+}
+
+.add img {
+    width: 30px;
+    height: 30px;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+
+.bag_btn {
+    text-transform: uppercase;
+    width: 300px;
+    height: 55px;
+    font-size: 25px;
+    text-align: center;
+    color: aliceblue;
+    background-color: #ff0055aa;
+    border: none;
+    transition: all 0.7s;
+
+}
+
+.bag_btn:hover {
+    background-color: #ff0055;
+    transition: all 0.7s;
+
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.wishlist_btn {
+    width: 179px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    transition: all 0.8s;
+
+}
+
+.wishlist_btn:hover {
+    background-color: #8a8a8996;
+    transition: all 0.7s;
+}
+
+.wishlist_btn img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: -8px;
+}
+
+.del_h2 {
+    text-transform: uppercase;
+
+}
+
+.del_h2 img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: -18px;
+}
+
+.delivery_main input {
+    width: 250px;
+    height: 50px;
+    border-radius: 12px;
+    border: 2px solid #000;
+}
+
+.delivery_main input::placeholder {
+    color: #fa0707cf;
+    font-size: 20px;
+    letter-spacing: 3px;
+    opacity: 0.7;
+}
+
+.delivery_main p {
+    margin-top: 6px;
+}
+
+.delivery_main .p {
+    margin-top: -15px;
+    margin-left: 50px;
+}
+
+.shirt1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #808080;
+}
+
+.footer h3 {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer li {
+    margin-top: 10px;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+.Main_Shirt1_1_content{
+    border-left:#3b3f3b outset 4px ;
+    border-bottom:#3b3f3b outset 4px ;
+
+}

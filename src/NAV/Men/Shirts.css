@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding: 0;
+    cursor:pointer;
+    /* background-color: aquamarine; */
+}
+.main_Shirts_onClick{
+    display: flex;
+}
+.main_left_shirts_onClick{
+ width: 250px;
+ height: 4350px;
+ background-color: teal;
+ 
+}
+.sub_main_left_shirts_onClick{
+    margin-left: 20px;
+    /* margin-top: -1px; */
+    /* position: fixed; */
+}
+.first_shirt_click{
+    background-color:wheat;
+    width: 320px;
+   
+}
+.first_shirt_click img{
+    width: 320px;
+    height: 400px;
+}
+.first_shirt_click h4,p{
+    font-size: 18px;
+}
+.main_first_shirt_onClick{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+       gap: 40px;
+       margin-left: 50px;
+       margin-top: 30px;
+}
+.main_right_shirts_onClick{
+    background-color: #46433fc0;
+}
+.sub_main_left_shirts_onClick h3{
+    color: #042f21;
+}

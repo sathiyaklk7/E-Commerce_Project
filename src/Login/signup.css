@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding:0;
+    cursor: pointer;
+}
+.signupimg{
+    border-right-style:  solid ;
+    width: 92%;
+    height: 725px;
+}
+.signupmain{
+    display: flex;
+}
+.signupdiv{
+    margin-left: -85px;
+    text-transform: capitalize;
+    background-color: aqua;
+    position: relative;
+    width: 559px;
+    animation-name: signupbgclr;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+@keyframes signupbgclr {
+    1%{
+        background-color: rgba(88, 208, 235, 0.567);
+    }
+    20%{
+        background-color: #7fef7fae;
+    }
+    40%{
+        background-color: #d5f0659c;
+    }
+
+    60%{
+        background-color: rgba(110, 94, 247, 0.695);
+    }
+    80%{
+        background-color: rgba(217, 114, 238, 0.674);
+    }
+    100%{
+        background-color: rgba(243, 112, 212, 0.621);
+    }
+}
+.signupdiv label{
+    font-size: 20px;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.signupdiv label,input{
+    margin-left: 70px;
+}
+.input {
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-bottom: solid 1px #f5f5f5;
+    background:transparent;
+    margin-top: 25px;
+} 
+.chexkbox{
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+}
+.signupdiv input::placeholder{
+    color: #f5f5f5;
+    text-transform: capitalize;
+    font-size: 23px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0.7;
+}
+.signupbtn{
+    background-color: red;
+    color: white;
+    width: 280px;
+    height: 40px;
+    border: none;
+    box-shadow: 0px 0px 12px 1px #12301d;
+    font-size: 20px;
+    font-family: fantasy;
+    letter-spacing: 3px;
+    transition: 1s;
+
+}
+.signupbtn:hover{
+    background-color: #03ff5b;
+    transition: 0.8s;
+}
+.signuplink{
+    float: right;
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+    margin-top: 3px;
+    margin-right: 30px;
+}
