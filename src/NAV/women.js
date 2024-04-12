@@ -13,6 +13,12 @@ import demoimg from "../Imgaes/car.jpg"
 import { Link } from "react-router-dom";
 // import video
 import Female from "./women_video";
+// slider
+import './womenslider.css'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import { NewRelease } from "./Women_Slider.jsx";
 class Women extends React.Component {
     constructor(props) {
         super(props)
@@ -21,12 +27,35 @@ class Women extends React.Component {
         }
     }
     render() {
+        const settings = {
+            className: "",
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: true
+          };
         return (
             <div >
                 <div>
                     {/* <Link className="bigimg"><img src={login} /></Link> */}
                     <Female />
                 </div>
+                <div className="women_main_slider">
+                    <Slider {...settings}>
+                        {
+                            NewRelease.map((p)=>(
+                                <div>
+                                    <div className="women_submain_slider">
+                                <img src={p.img} />
+                                    </div>
+                                </div>
+                            ))
+                        }
+
+                    </Slider>
+                </div>
+
                 <h2 className="biggest">biggest deals on top brands</h2>
                 <div className="menflex">
                     <div className="mencontent1">
