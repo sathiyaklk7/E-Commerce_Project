@@ -220,6 +220,10 @@ p,h4{
     display: flex;
     justify-content: space-between;
 }
+.men_slider1_main{
+    padding: 25px;
+
+}
 .indwear img{
     width: 280px;
     height: 280px;

@@ -37,8 +37,11 @@ import Ethinic_Casuals from '../Imgaes/men/content_img/Ethinic_Casual.jpg'
 import Printed_kurta from '../Imgaes/men/content_img/Printed_kurta.avif'
 import Everyday_Kurtas from '../Imgaes/men/content_img/Everyday_kurta.jpg'
 import Handpicked_Trendy from '../Imgaes/men/content_img/Handpicked.jpg'
-// import Router
-
+// import slider
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import { Newmen } from "./Men_slider1.jsx";
 class Men extends React.Component {
     constructor(props) {
         super(props)
@@ -47,6 +50,14 @@ class Men extends React.Component {
         }
     }
     render() {
+        const set = {
+            focusOnSelect: true,
+            infinite: true,
+            slidesToShow: 6,
+            autoplay: true,
+            slidesToScroll: 3,
+            speed: 500
+        };
         return (
             <div >
                 <div>
@@ -57,110 +68,126 @@ class Men extends React.Component {
                 <div className="menflex">
                     <div className="mencontent1">
                         <Link className="Link" to='/Polo'><img src={Polo} />
-                        <p>U.S POLO ASSN</p>
-                        <h4>30-60% Off</h4></Link>
+                            <p>U.S POLO ASSN</p>
+                            <h4>30-60% Off</h4></Link>
                         <Link className="Link" to='/Nike'><img className="img2men" src={Nike1} /><br />
-                        <img style={{ width: "100px", height: '20px' }} src={Nike} />
-                        <h4>Up To 50% Off</h4></Link>
+                            <img style={{ width: "100px", height: '20px' }} src={Nike} />
+                            <h4>Up To 50% Off</h4></Link>
                     </div>
                     <div className="mencontent1">
                         <Link className="Link" to='/Levis' ><img src={Levis} />
-                        <p>Levis</p>
-                        <h4>Min.40 % Off</h4></Link>
+                            <p>Levis</p>
+                            <h4>Min.40 % Off</h4></Link>
                         <Link className="Link" to='/Puma' ><img className="img2men" src={Puma1} /><br />
-                        <img style={{ width: "100px", height: '30px' }} src={Puma} />
-                        <h4>30-70% Off</h4></Link>
+                            <img style={{ width: "100px", height: '30px' }} src={Puma} />
+                            <h4>30-70% Off</h4></Link>
                     </div>
                     <div className="mencontent1">
                         <Link className="Link" to='/Tommy' ><img src={Tommy} />
-                        <p>TOMMY HILIFIER</p>
-                        <h4>30-50% Off</h4></Link>
+                            <p>TOMMY HILIFIER</p>
+                            <h4>30-50% Off</h4></Link>
                         <Link className="Link" to='/Sketchers' ><img className="img2men" src={Sketchers1} /><br />
-                        <img style={{ width: "100px", height: '30px' }} src={Sketchers} />
-                        <h4>Up To 40% Off</h4></Link>
+                            <img style={{ width: "100px", height: '30px' }} src={Sketchers} />
+                            <h4>Up To 40% Off</h4></Link>
                     </div>
                     <div className="mencontent1">
                         <Link className="Link" to='/UnitedColor'><img src={UnitedColor} />
-                        <p>UNITED COLORS</p>
-                        <h4>40-70% Off</h4></Link>
+                            <p>UNITED COLORS</p>
+                            <h4>40-70% Off</h4></Link>
                         <Link className="Link" to='./Crocs'><img className="img2men" src={Crocs1} /><br />
-                        <img style={{ width: "150px", height: '25px',backgroundColor:'#f5dcdc5a' }} src={Crocs} />
-                        <h4>Up To 50% Off</h4></Link>
+                            <img style={{ width: "150px", height: '25px', backgroundColor: '#f5dcdc5a' }} src={Crocs} />
+                            <h4>Up To 50% Off</h4></Link>
                     </div>
                 </div>
                 <h2 className="biggest">catergories to bag</h2>
                 <div className="ctb">
                     <div className="ctb1">
                         <Link className="Link" to='/shirt1'><img src={Shirts} />
-                        <p style={{ textTransform: 'uppercase' }}> shirts</p></Link>
+                            <p style={{ textTransform: 'uppercase' }}> shirts</p></Link>
                     </div>
                     <div className="ctb1">
                         <Link className="Link" to="/T_Shirt1" ><img src={T_Shirts} />
-                        <p style={{ textTransform: 'uppercase' }}>T-shirts</p></Link>
+                            <p style={{ textTransform: 'uppercase' }}>T-shirts</p></Link>
                     </div>
                     <div className="ctb1">
                         <Link className="Link" to="/Jeans"> <img src={Jeans} />
-                        <p style={{ textTransform: 'uppercase' }}> Jeans</p></Link>
+                            <p style={{ textTransform: 'uppercase' }}> Jeans</p></Link>
                     </div>
                     <div className="ctb1">
                         <Link className="Link" to="/Shorts_Trousers"><img src={Shorts_Trousers} />
-                        <p style={{ textTransform: 'uppercase' }}> Shorts & Trousers</p></Link>
+                            <p style={{ textTransform: 'uppercase' }}> Shorts & Trousers</p></Link>
                     </div>
                     <div className="ctb1">
                         <Link className="Link" to="/Casual_Shoes"><img src={Casual_Shoes} />
-                        <p style={{ textTransform: 'uppercase' }}> Casual Shoes</p></Link>
+                            <p style={{ textTransform: 'uppercase' }}> Casual Shoes</p></Link>
                     </div>
                     <div className="ctb1">
                         <Link className="Link" to="/Infant_Essentials"><img src={Infant_Essentials} />
-                        <p style={{ textTransform: 'uppercase' }}> Infant Essentials</p></Link>
+                            <p style={{ textTransform: 'uppercase' }}> Infant Essentials</p></Link>
                     </div>
                 </div>
+                <div className="men_slider1_main">
+                    <Slider {...set}>
+                        {
+                            Newmen.map((p) => (
+                                <div className="ctb">
+                                    <div className="ctb1">
+                                        <img src={p.img} />
+                                        <p style={{ textTransform: 'uppercase' }}>{p.name}</p>
+                                    </div>
+                                </div>
+                            ))
+
+                        }
+                    </Slider>
+                </div>
+
                 <h2 className="biggest">trending in indian wear</h2>
                 <div className="indwearmain">
                     <div className="indwear">
                         <Link className="Link" to='/Indian_wear'><img src={Indian_wear} />
-                        <h4 style={{
-                            textTransform: 'capitalize', marginTop: '-5px', wordSpacing: '4px'
-                        }}>All White indian wear</h4>
-                        <p style={{
-                           fontSize:'10px', textTransform: 'capitalize', marginTop: '0px', letterSpacing: '2px'
-                        }}>for an always cool outlook</p></Link>
+                            <h4 style={{
+                                textTransform: 'capitalize', marginTop: '-5px', wordSpacing: '4px'
+                            }}>All White indian wear</h4>
+                            <p style={{
+                                fontSize: '10px', textTransform: 'capitalize', marginTop: '0px', letterSpacing: '2px'
+                            }}>for an always cool outlook</p></Link>
                     </div>
                     <div className="indwear">
                         <Link className="Link" to='/Ethinic_Casuals'> <img src={Ethinic_Casuals} />
-                        <h4 style={{
-                            textTransform: 'capitalize', marginTop: '-5px', wordSpacing: '4px'
-                        }}>Ethinic Casuals</h4>
-                        <p style={{
-                           fontSize:'10px', textTransform: 'capitalize', marginTop: '0px', letterSpacing: '2px'
-                        }}>Indian surely know the route to comfort</p></Link>
+                            <h4 style={{
+                                textTransform: 'capitalize', marginTop: '-5px', wordSpacing: '4px'
+                            }}>Ethinic Casuals</h4>
+                            <p style={{
+                                fontSize: '10px', textTransform: 'capitalize', marginTop: '0px', letterSpacing: '2px'
+                            }}>Indian surely know the route to comfort</p></Link>
                     </div>
                     <div className="indwear">
                         <Link className="Link" to='/Printed_kurta'> <img src={Printed_kurta} />
-                        <h4 style={{
-                            textTransform: 'capitalize', marginTop: '-5px', wordSpacing: '4px'
-                        }}>Printed kurta Sets</h4>
-                        <p style={{
-                           fontSize:'10px', textTransform: 'capitalize', marginTop: '0px', letterSpacing: '2px'
-                        }}>Festive wear that your family will love</p></Link>
+                            <h4 style={{
+                                textTransform: 'capitalize', marginTop: '-5px', wordSpacing: '4px'
+                            }}>Printed kurta Sets</h4>
+                            <p style={{
+                                fontSize: '10px', textTransform: 'capitalize', marginTop: '0px', letterSpacing: '2px'
+                            }}>Festive wear that your family will love</p></Link>
                     </div>
                     <div className="indwear">
                         <Link className="Link" to='/Everyday_Kurtas'><img src={Everyday_Kurtas} />
-                        <h4 style={{
-                            textTransform: 'capitalize', marginTop: '-5px', wordSpacing: '4px'
-                        }}>Everyday Kurtas</h4>
-                        <p style={{
-                           fontSize:'10px', textTransform: 'capitalize', marginTop: '0px', letterSpacing: '2px'
-                        }}>When Style Meet Comfort</p></Link>
+                            <h4 style={{
+                                textTransform: 'capitalize', marginTop: '-5px', wordSpacing: '4px'
+                            }}>Everyday Kurtas</h4>
+                            <p style={{
+                                fontSize: '10px', textTransform: 'capitalize', marginTop: '0px', letterSpacing: '2px'
+                            }}>When Style Meet Comfort</p></Link>
                     </div>
                     <div className="indwear">
                         <Link className="Link" to='/Handpicked_Trendy'> <img src={Handpicked_Trendy} />
-                        <h4 style={{
-                            textTransform: 'capitalize', marginTop: '-5px', wordSpacing: '4px'
-                        }}>Handpicked Trendy Styles</h4>
-                        <p style={{
-                            fontSize:'10px',textTransform: 'capitalize', marginTop: '-2px', letterSpacing: '2px'
-                        }}>Update the language of Comfort </p></Link>
+                            <h4 style={{
+                                textTransform: 'capitalize', marginTop: '-5px', wordSpacing: '4px'
+                            }}>Handpicked Trendy Styles</h4>
+                            <p style={{
+                                fontSize: '10px', textTransform: 'capitalize', marginTop: '-2px', letterSpacing: '2px'
+                            }}>Update the language of Comfort </p></Link>
                     </div>
                 </div>
                 <div className="footer">
@@ -241,7 +268,7 @@ class Men extends React.Component {
                 </div>
                 <div>
                     <h3>popular search</h3>
-                    <p style={{ textTransform: 'capitalize', wordSpacing: '5px', letterSpacing: '4px', textAlign: 'justify', wordBreak:'break-all' }}>sherwani|track
+                    <p style={{ textTransform: 'capitalize', wordSpacing: '5px', letterSpacing: '4px', textAlign: 'justify', wordBreak: 'break-all' }}>sherwani|track
                         pants|blazers|sweaters for men|men wedding dresses|kurta pajama|raincoats|shorts|trousers|waistcoat
                         |inner wear|night wear|jeans|shirts|jogger jeans|men suits|t shirts|sweatshirts|jackets for men
                         |tracksuits|ripped jeans|ethnic wear|hoodies|rakshabandhangifts|watches|shoes|belts|swimwear|dhotis|boxers|vests|thermals|socks|shurgs|bracelers|rings|sunglasses|headphones|

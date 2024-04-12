@@ -1,4 +1,4 @@
-import React, { Component }  from "react";
+import React from "react";
 import login from '../Imgaes/Home/homepageimg.jpg'
 import Appstore from '../Imgaes/men/appstore.png'
 import googleplaylogo from '../Imgaes/men/Google-Play-Logo-2022.webp'
@@ -17,6 +17,7 @@ import Female from "./women_video";
 import './womenslider.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 import Slider from "react-slick";
 import { NewRelease } from "./Women_Slider.jsx";
 import { NewRelease1 } from "./Women_slider2.jsx";
@@ -36,16 +37,16 @@ class Women extends React.Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             adaptiveHeight: true
-          };
-          const settings1 = {
-            className: "center",
-            centerMode: true,
+        };
+        const set = {
+            focusOnSelect: true,
             infinite: true,
-            centerPadding: "20px",
-            slidesToShow: 5,
+            slidesToShow: 7,
             autoplay:true,
+            slidesToScroll: 3,
             speed: 500
-          };
+        };
+
         return (
             <div >
                 <div>
@@ -55,10 +56,10 @@ class Women extends React.Component {
                 <div className="women_main_slider">
                     <Slider {...settings}>
                         {
-                            NewRelease.map((p)=>(
+                            NewRelease.map((p) => (
                                 <div>
                                     <div className="women_submain_slider">
-                                <img src={p.img} />
+                                        <img src={p.img} />
                                     </div>
                                 </div>
                             ))
@@ -98,21 +99,21 @@ class Women extends React.Component {
                         <p>UNITED COLORS</p>
                         <h4>40-70% Off</h4>
                         <Link><img className="img2men" src={demoimg} /></Link><br />
-                       <Link> <img style={{ width: "100px", height: '20px' }} src={Onshophy} /></Link>
+                        <Link> <img style={{ width: "100px", height: '20px' }} src={Onshophy} /></Link>
                         <h4>Up To 50% Off</h4>
                     </div>
                 </div>
                 <div className="slider2_main">
-                    <Slider {...settings1}>
+                    <Slider {...set}>
                         {
-                            NewRelease1.map((p)=>(
+                            NewRelease1.map((p) => (
                                 <div className="slider2_submain">
                                     <img src={p.img} />
                                 </div>
 
                             ))
                         }
-                        
+
                     </Slider>
                 </div>
                 <h2 className="biggest">catergories to bag</h2>
@@ -126,7 +127,7 @@ class Women extends React.Component {
                         <p style={{ textTransform: 'uppercase' }}>T-shirts</p>
                     </div>
                     <div className="ctb1">
-                       <Link> <img src={demoimg} /></Link>
+                        <Link> <img src={demoimg} /></Link>
                         <p style={{ textTransform: 'uppercase' }}> Jeans</p>
                     </div>
                     <div className="ctb1">
@@ -154,7 +155,7 @@ class Women extends React.Component {
                         }}>for an always cool outlook</p>
                     </div>
                     <div className="indwear">
-                       <Link> <img src={demoimg} /></Link>
+                        <Link> <img src={demoimg} /></Link>
                         <h4 style={{
                             textTransform: 'capitalize', marginTop: '-5px', wordSpacing: '4px'
                         }}>All White indian wear</h4>
@@ -163,7 +164,7 @@ class Women extends React.Component {
                         }}>for an always cool outlook</p>
                     </div>
                     <div className="indwear">
-                       <Link> <img src={demoimg} /></Link>
+                        <Link> <img src={demoimg} /></Link>
                         <h4 style={{
                             textTransform: 'capitalize', marginTop: '-5px', wordSpacing: '4px'
                         }}>All White indian wear</h4>
@@ -181,7 +182,7 @@ class Women extends React.Component {
                         }}>for an always cool outlook</p>
                     </div>
                     <div className="indwear">
-                       <Link> <img src={demoimg} /></Link>
+                        <Link> <img src={demoimg} /></Link>
                         <h4 style={{
                             textTransform: 'capitalize', marginTop: '-5px', wordSpacing: '4px'
                         }}>All White indian wear</h4>
@@ -240,8 +241,8 @@ class Women extends React.Component {
                             marginTop: '20px',
                             marginBottom: '30px'
                         }}>
-                            <Link><img style={{ width: '150px', height: '30px',borderRadius:'12px' }} src={googleplaylogo} /></Link>
-                            <Link><img style={{ width: '150px', height: '30px',borderRadius:'12px',marginLeft:'10px' }} src={Appstore} /></Link>
+                            <Link><img style={{ width: '150px', height: '30px', borderRadius: '12px' }} src={googleplaylogo} /></Link>
+                            <Link><img style={{ width: '150px', height: '30px', borderRadius: '12px', marginLeft: '10px' }} src={Appstore} /></Link>
                         </div>
 
                         <h3>keep it touch</h3>
@@ -251,18 +252,18 @@ class Women extends React.Component {
                             display: 'flex',
                             gap: '40px'
                         }}>
-                            <Link><img style={{ width: '50px', height: '50px',borderRadius:'10px' }} src={fb} /></Link>
-                            <Link><img style={{ width: '50px', height: '50px',borderRadius:'10px' }} src={twitterlogo} /></Link>
-                            <Link><img style={{ width: '50px', height: '50px',borderRadius:'10px' }} src={utubelogo} /></Link>
-                            <Link><img style={{ width: '50px', height: '50px',borderRadius:'10px' }} src={instalogo} /></Link>
+                            <Link><img style={{ width: '50px', height: '50px', borderRadius: '10px' }} src={fb} /></Link>
+                            <Link><img style={{ width: '50px', height: '50px', borderRadius: '10px' }} src={twitterlogo} /></Link>
+                            <Link><img style={{ width: '50px', height: '50px', borderRadius: '10px' }} src={utubelogo} /></Link>
+                            <Link><img style={{ width: '50px', height: '50px', borderRadius: '10px' }} src={instalogo} /></Link>
                         </div>
                     </div>
                     <div>
-                        <Link><img style={{ 
-                            width: '70px', height: '70px',marginTop:'30px',borderRadius:'10px' 
-                            }} src={guaranteelogo} /></Link>
+                        <Link><img style={{
+                            width: '70px', height: '70px', marginTop: '30px', borderRadius: '10px'
+                        }} src={guaranteelogo} /></Link>
                         <p><b>100% original</b> guarantee for<br /> all products at shoppy.com</p>
-                        <Link><img style={{ width: '70px', height: '70px',borderRadius:'10px',marginTop:'20px'  }} src={fourteendays} /></Link>
+                        <Link><img style={{ width: '70px', height: '70px', borderRadius: '10px', marginTop: '20px' }} src={fourteendays} /></Link>
                         <p><b>Return within 14days</b> of<br />receiving your order</p>
                     </div>
                 </div>
