@@ -31,6 +31,7 @@ class Women extends React.Component {
             className: "",
             dots: true,
             infinite: true,
+            autoplay: true,
             slidesToShow: 1,
             slidesToScroll: 1,
             adaptiveHeight: true
