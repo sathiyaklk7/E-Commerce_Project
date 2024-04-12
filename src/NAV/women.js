@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component }  from "react";
 import login from '../Imgaes/Home/homepageimg.jpg'
 import Appstore from '../Imgaes/men/appstore.png'
 import googleplaylogo from '../Imgaes/men/Google-Play-Logo-2022.webp'
@@ -19,6 +19,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { NewRelease } from "./Women_Slider.jsx";
+import { NewRelease1 } from "./Women_slider2.jsx";
 class Women extends React.Component {
     constructor(props) {
         super(props)
@@ -35,6 +36,15 @@ class Women extends React.Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             adaptiveHeight: true
+          };
+          const settings1 = {
+            className: "center",
+            centerMode: true,
+            infinite: true,
+            centerPadding: "20px",
+            slidesToShow: 5,
+            autoplay:true,
+            speed: 500
           };
         return (
             <div >
@@ -91,6 +101,19 @@ class Women extends React.Component {
                        <Link> <img style={{ width: "100px", height: '20px' }} src={Onshophy} /></Link>
                         <h4>Up To 50% Off</h4>
                     </div>
+                </div>
+                <div className="slider2_main">
+                    <Slider {...settings1}>
+                        {
+                            NewRelease1.map((p)=>(
+                                <div className="slider2_submain">
+                                    <img src={p.img} />
+                                </div>
+
+                            ))
+                        }
+                        
+                    </Slider>
                 </div>
                 <h2 className="biggest">catergories to bag</h2>
                 <div className="ctb">
