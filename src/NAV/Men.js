@@ -55,8 +55,9 @@ class Men extends React.Component {
             infinite: true,
             slidesToShow: 6,
             autoplay: true,
+            autoplayspeed:1000,
             slidesToScroll: 3,
-            speed: 500
+            speed: 500,
         };
         return (
             <div >

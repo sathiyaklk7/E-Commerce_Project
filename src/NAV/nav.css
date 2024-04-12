@@ -346,3 +346,12 @@ p,h4{
     transition: all 1s;
 
 }
+.HomeBigSlider_Submain img{
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+}
+.HomeBigSlider_Main{
+    padding: 100px;
+    margin-top: -150px;
+}

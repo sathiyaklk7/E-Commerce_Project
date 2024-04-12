@@ -36,7 +36,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { NewRelease } from "./homeslider.jsx";
-
+import { HomeBigSlider } from "./Home_BigSlider.jsx"
 class Home extends React.Component {
     constructor(props) {
         super(props)
@@ -55,11 +55,39 @@ class Home extends React.Component {
             autoplaySpeed: 1500,
             cssEase: "linear"
         };
+        const settings1 = {
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            vertical: true,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            verticalSwiping: true,
+            swipeToSlide: true,
+            beforeChange: function (currentSlide, nextSlide) {
+                console.log("before change", currentSlide, nextSlide);
+            },
+            afterChange: function (currentSlide) {
+                console.log("after change", currentSlide);
+            }
+        };
         return (
 
             <div>
                 <div >
                     <Home_video />
+                </div>
+                <div className="HomeBigSlider_Main">
+                    <Slider {...settings1}>{
+                        HomeBigSlider.map((p) => (
+                            <div className="HomeBigSlider_Submain">
+                                <img src={p.img} />
+                            </div>
+                        ))
+
+                    }
+
+                    </Slider>
                 </div>
                 <div style={{ textAlign: 'center' }}>
                     <h2 style={{
@@ -72,24 +100,7 @@ class Home extends React.Component {
                 </div>
 
                 <div className="div1main">
-                    <div className="home_1st_img">
-                        <div>
-                            <img className="img1" style={{
-                                borderTopLeftRadius: '10px',
-                                borderTopRightRadius: '10px',
-                                height: '230px'
-                            }} src={Topright} />
-                        </div>
-                        <div>
-                            <h3 style={{
 
-                                textAlign: 'center'
-                            }}>MIN.50% OFF</h3>
-                        </div>
-                        <div className="img1">
-                            <Link className="Link" to="/Top_Left"><button className="div1btn">View March Offer </button></Link>
-                        </div>
-                    </div>
                     <div className="div1">
                         <div>
                             <img className="img1" src={Backpacks} />
@@ -122,20 +133,7 @@ class Home extends React.Component {
                         <h3 style={{ textTransform: 'uppercase' }}>min.30% off</h3>
                         <Link className="Link" to='/Premium'><button className="div1btn">View March Offer </button></Link>
                     </div>
-                    <div className="home_2nd_img">
-                        <div>
-                            <img className="img1" style={{
-                                borderTopLeftRadius: '10px',
-                                borderTopRightRadius: '10px',
-                                height: '230px'
-                            }} src={Topleft} />
-                        </div>
-                        <h3 style={{ textTransform: 'uppercase' }}>under <mark style={{ backgroundColor: 'green', borderRadius: '7px' }}>Rs999</mark></h3>
-                        <Link className="Link" to="/Top_Right"><button className="div1btn" style={{
-                            marginTop: '3px',
-                            marginLeft: '-7px'
-                        }}>View March Offer </button></Link>
-                    </div>
+
                 </div>
                 <div style={{ textAlign: "center" }}>
                     <h5 style={{ marginTop: '10px', fontSize: '20px', textShadow: '2px 1px 3px  #000' }}>SHOP BY</h5>
@@ -144,60 +142,19 @@ class Home extends React.Component {
                     }}>CATEGORY</h3>
                 </div>
                 <div className="main_slider" >
-                <Slider {...settings}>
-                {
-                NewRelease.map((p) => (
-                    <div >
-                    <div className="slider">
-                        <img  src={p.img} />
-                        <p > {p.name}</p>
-                        </div>
-                        </div>
-                ))
-            }
+                    <Slider {...settings}>
+                        {
+                            NewRelease.map((p) => (
+                                <div >
+                                    <div className="slider">
+                                        <img src={p.img} />
+                                        <p > {p.name}</p>
+                                    </div>
+                                </div>
+                            ))
+                        }
                     </Slider>
-                    </div>
-                        
-                            
-                                {/* // <div>
-                                //     <div className="categorydiv">
-                                //         <div className="categorydiv1">
-                                //             <img className="img2" src={demoimg} /><br />
-                                //             <button className="categorybtn"><p >women's ethnic wear</p><br /><h3 style={{ marginTop: '-14px' }}>50-80% OFF</h3><br /><p style={{ marginTop: '-14px' }}>Shop now</p></button>
-                                //         </div>
-                                //         <div className="categorydiv1">
-                                //             <img className="img2" src={demoimg} /><br />
-                                //             <button className="categorybtn"><p >Grooming</p><br /><h3 style={{ marginTop: '-14px' }}>UP TO 60% OFF</h3><br /><p style={{ marginTop: '-14px' }}>Shop now</p></button>
-                                //         </div>
-                                //         <div className="categorydiv1">
-                                //             <img className="img2" src={demoimg} /><br />
-                                //             <button className="categorybtn"><p >WFH Casual Wear </p><br /><h3 style={{ marginTop: '-14px' }}>40-50% OFF</h3><br /><p style={{ marginTop: '-14px' }}>Shopn now</p></button>
-                                //         </div>
-                                //         <div className="categorydiv1">
-                                //             <img className="img2" src={demoimg} /><br />
-                                //             <button className="categorybtn"><p >Sports Wear</p><br /><h3 style={{ marginTop: '-14px' }}>30-80% OFF</h3><br /><p style={{ marginTop: '-14px' }}>Shopn now</p></button>
-                                //         </div>
-                                //         <div className="categorydiv1">
-                                //             <img className="img2" src={demoimg} /><br />
-                                //             <button className="categorybtn"><p >Bags,Belts & Wallets</p><br /><h3 style={{ marginTop: '-14px' }}>40-70% OFF</h3><br /><p style={{ marginTop: '-14px' }}>Shopn now</p></button>
-                                //         </div>
-                                //         <div className="categorydiv1">
-                                //             <img className="img2" src={demoimg} /><br />
-                                //             <button className="categorybtn"><p >Jewellery</p><br /><h3 style={{ marginTop: '-14px' }}>UP TO 80% OFF</h3><br /><p style={{ marginTop: '-14px' }}>Shopn now</p></button>
-                                //         </div>
-                                //         <div className="categorydiv1">
-                                //             <img className="img2" src={demoimg} /><br />
-                                //             <button className="categorybtn"><p >Home Dector</p><br /><h3 style={{ marginTop: '-14px' }}>40-70% OFF</h3><br /><p style={{ marginTop: '-14px' }}>Shopn now</p></button>
-                                //         </div>
-                                //         <div className="categorydiv1">
-                                //             <img className="img2" src={demoimg} /><br />
-                                //             <button className="categorybtn"><p >Handbags</p><br /><h3 style={{ marginTop: '-14px' }}>40-80% off</h3><br /><p style={{ marginTop: '-14px' }}>Shopn now</p></button>
-                                //         </div>
-                                //     </div>
-                                // </div>
-                            
-                        // )) */}
-                  
+                </div>
 
                 <div className="main_category" >
                     <Link className="Link" to='/headphones'><div className="categorydiv1_2">

@@ -34,6 +34,7 @@ class Women extends React.Component {
             dots: true,
             infinite: true,
             autoplay: true,
+            autoplayspeed:1000,
             slidesToShow: 1,
             slidesToScroll: 1,
             adaptiveHeight: true
@@ -43,6 +44,7 @@ class Women extends React.Component {
             infinite: true,
             slidesToShow: 7,
             autoplay:true,
+            autoplayspeed:1000,
             slidesToScroll: 3,
             speed: 500
         };
