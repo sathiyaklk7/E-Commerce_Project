@@ -122,23 +122,23 @@ class Women extends React.Component {
                 <div className="ctb">
                     <div className="ctb1">
                         <Link><img src={demoimg} /></Link>
-                        <p style={{ textTransform: 'uppercase' }}> shirts</p>
+                        <p style={{ textTransform: 'uppercase' }}> Moss & Melange</p>
                     </div>
                     <div className="ctb1">
                         <Link><img src={demoimg} /></Link>
-                        <p style={{ textTransform: 'uppercase' }}>T-shirts</p>
+                        <p style={{ textTransform: 'uppercase' }}>Mod Blocking</p>
                     </div>
                     <div className="ctb1">
                         <Link> <img src={demoimg} /></Link>
-                        <p style={{ textTransform: 'uppercase' }}> Jeans</p>
+                        <p style={{ textTransform: 'uppercase' }}> Red Top & Tees</p>
                     </div>
                     <div className="ctb1">
                         <Link><img src={demoimg} /></Link>
-                        <p style={{ textTransform: 'uppercase' }}> Shorts & Trousers</p>
+                        <p style={{ textTransform: 'uppercase' }}> Smart Daily Wear Tees</p>
                     </div>
                     <div className="ctb1">
                         <Link><img src={demoimg} /></Link>
-                        <p style={{ textTransform: 'uppercase' }}> Casual Shoes</p>
+                        <p style={{ textTransform: 'uppercase' }}> Eco </p>
                     </div>
                     <div className="ctb1">
                         <Link><img src={demoimg} /></Link>
@@ -154,7 +154,7 @@ class Women extends React.Component {
                         }}>All White indian wear</h4>
                         <p style={{
                             textTransform: 'capitalize', marginTop: '-5px', letterSpacing: '2px'
-                        }}>for an always cool outlook</p>
+                        }}>for an always </p>
                     </div>
                     <div className="indwear">
                         <Link> <img src={demoimg} /></Link>
@@ -163,7 +163,7 @@ class Women extends React.Component {
                         }}>All White indian wear</h4>
                         <p style={{
                             textTransform: 'capitalize', marginTop: '-5px', letterSpacing: '2px'
-                        }}>for an always cool outlook</p>
+                        }}>for an always </p>
                     </div>
                     <div className="indwear">
                         <Link> <img src={demoimg} /></Link>
@@ -172,7 +172,7 @@ class Women extends React.Component {
                         }}>All White indian wear</h4>
                         <p style={{
                             textTransform: 'capitalize', marginTop: '-5px', letterSpacing: '2px'
-                        }}>for an always cool outlook</p>
+                        }}>for an always </p>
                     </div>
                     <div className="indwear">
                         <Link><img src={demoimg} /></Link>
@@ -181,7 +181,7 @@ class Women extends React.Component {
                         }}>All White indian wear</h4>
                         <p style={{
                             textTransform: 'capitalize', marginTop: '-5px', letterSpacing: '2px'
-                        }}>for an always cool outlook</p>
+                        }}>for an always </p>
                     </div>
                     <div className="indwear">
                         <Link> <img src={demoimg} /></Link>
@@ -190,7 +190,7 @@ class Women extends React.Component {
                         }}>All White indian wear</h4>
                         <p style={{
                             textTransform: 'capitalize', marginTop: '-5px', letterSpacing: '2px'
-                        }}>for an always cool outlook</p>
+                        }}>for an always </p>
                     </div>
                 </div>
                 <div className="footer">
