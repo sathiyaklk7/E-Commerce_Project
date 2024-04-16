@@ -3,6 +3,10 @@
     padding: 0;
     cursor: pointer;
 }
+.navmain{
+    position: static;
+    z-index: +1;
+}
 .navonemain{
     display: flex;
     justify-content: space-around;

@@ -11,6 +11,8 @@ import Onshophy from '../logo/ShopyVision-300x93-removebg-preview.png'
 import fb from '../Imgaes/men/fb.jpeg'
 import demoimg from "../Imgaes/car.jpg"
 import { Link } from "react-router-dom";
+// logo
+import Biba from "../Imgaes/women/logo/biba.webp"
 // import video
 import Female from "./women_video";
 // slider
@@ -74,7 +76,7 @@ class Women extends React.Component {
                 <div className="menflex">
                     <div className="mencontent1">
                         <Link><img src={demoimg} /></Link>
-                        <p>U.S POLO ASSN</p>
+                        <img src={Biba} />
                         <h4>30-60% Off</h4>
                         <Link><img className="img2men" src={demoimg} /></Link><br />
                         <Link><img style={{ width: "100px", height: '20px' }} src={Onshophy} /></Link>

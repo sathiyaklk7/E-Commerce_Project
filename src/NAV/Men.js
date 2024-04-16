@@ -267,15 +267,7 @@ class Men extends React.Component {
                         <p><b>Return within 14days</b> of<br />receiving your order</p>
                     </div>
                 </div>
-                <div>
-                    <h3>popular search</h3>
-                    <p style={{ textTransform: 'capitalize', wordSpacing: '5px', letterSpacing: '4px', textAlign: 'justify', wordBreak: 'break-all' }}>sherwani|track
-                        pants|blazers|sweaters for men|men wedding dresses|kurta pajama|raincoats|shorts|trousers|waistcoat
-                        |inner wear|night wear|jeans|shirts|jogger jeans|men suits|t shirts|sweatshirts|jackets for men
-                        |tracksuits|ripped jeans|ethnic wear|hoodies|rakshabandhangifts|watches|shoes|belts|swimwear|dhotis|boxers|vests|thermals|socks|shurgs|bracelers|rings|sunglasses|headphones|
-                        wallets|helmets|caps|mufflers|glovers|ties|cufflinks|men sandals|floaters|flip flops|trunks|bags
-                    </p>
-                </div>
+                
             </div>
         )
     }

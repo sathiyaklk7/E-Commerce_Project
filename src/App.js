@@ -77,7 +77,7 @@ const App = () => {
         </div>
       </div>
       <Router>
-        <div> 
+        <div className="navmain"> 
             <nav>
               <ul className="navmain">
                 <li className="navli">
@@ -93,9 +93,6 @@ const App = () => {
                 <li className="navli">
                   <Link className="navlink" to="/kids">KIDS</Link>
                 </li>
-                {/* <li className="navli">
-                  <Link className="navlink" to="/homeliving">HOME&LIVING</Link>
-                </li> */}
                 <li className="navli">
                   <Link className="navlink" to="/about">ABOUT</Link>
                 </li>
