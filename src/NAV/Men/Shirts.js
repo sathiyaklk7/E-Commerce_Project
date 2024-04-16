@@ -104,37 +104,37 @@ class Shirts extends React.Component {
                                 this.state.check == true ?
                                     <div className="main_first_shirt_onClick">
                                         <div className="first_shirt_click">
-                                            <Link to='/shirt1_1' ><img src={img} />
+                                            <Link className="link" to='/shirt1_1' ><img src={img} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
                                         </div>
                                         <div className="first_shirt_click">
-                                            <Link to='/shirt1_2'><img src={img2} />
+                                            <Link className="link" to='/shirt1_2'><img src={img2} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
                                         </div>
                                         <div className="first_shirt_click">
-                                            <Link to='/shirt1_3'><img src={img3} />
+                                            <Link className="link" to='/shirt1_3'><img src={img3} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
                                         </div>
                                         <div className="first_shirt_click">
-                                            <Link to='/shirt1_4'><img src={img4} />
+                                            <Link className="link" to='/shirt1_4'><img src={img4} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
                                         </div>
                                         <div className="first_shirt_click">
-                                            <Link to='/shirt1_5' ><img src={img5} />
+                                            <Link className="link" to='/shirt1_5' ><img src={img5} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
                                         </div>
                                         <div className="first_shirt_click">
-                                            <Link to='/shirt1_6'><img src={img6} />
+                                            <Link className="link" to='/shirt1_6'><img src={img6} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
@@ -156,37 +156,37 @@ class Shirts extends React.Component {
                                 this.state.check2 == true ?
                                     <div className="main_first_shirt_onClick">
                                         <div className="first_shirt_click">
-                                            <Link to='/Shirt2_1'><img src={img7} />
+                                            <Link className="link" to='/Shirt2_1'><img src={img7} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
                                         </div>
                                         <div className="first_shirt_click">
-                                            <Link to='/Shirt2_2' ><img src={img8} />
+                                            <Link className="link" to='/Shirt2_2' ><img src={img8} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
                                         </div>
                                         <div className="first_shirt_click">
-                                            <Link to='/Shirt2_3'><img src={img9} />
+                                            <Link className="link" to='/Shirt2_3'><img src={img9} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
                                         </div>
                                         <div className="first_shirt_click">
-                                            <Link to='/Shirt2_4'><img src={img10} />
+                                            <Link className="link" to='/Shirt2_4'><img src={img10} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
                                         </div>
                                         <div className="first_shirt_click">
-                                            <Link to='/Shirt2_5'><img src={img11} />
+                                            <Link className="link" to='/Shirt2_5'><img src={img11} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
                                         </div>
                                         <div className="first_shirt_click">
-                                            <Link to='/Shirt2_6'><img src={img12} />
+                                            <Link className="link" to='/Shirt2_6'><img src={img12} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
@@ -202,37 +202,37 @@ class Shirts extends React.Component {
                                 this.state.check3 == true ?
                                     <div className="main_first_shirt_onClick">
                                         <div className="first_shirt_click">
-                                            <Link to='/whiteshirt1'><img src={img13} />
+                                            <Link className="link" to='/whiteshirt1'><img src={img13} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
                                         </div>
                                         <div className="first_shirt_click">
-                                            <Link><img src={img14} />
+                                            <Link className="link"><img src={img14} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
                                         </div>
                                         <div className="first_shirt_click">
-                                            <Link><img src={img15} />
+                                            <Link className="link"><img src={img15} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
                                         </div>
                                         <div className="first_shirt_click">
-                                            <Link><img src={img16} />
+                                            <Link className="link"><img src={img16} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
                                         </div>
                                         <div className="first_shirt_click">
-                                            <Link><img src={img17} />
+                                            <Link className="link"><img src={img17} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
                                         </div>
                                         <div className="first_shirt_click">
-                                            <Link><img src={img18} />
+                                            <Link className="link"><img src={img18} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
@@ -248,37 +248,37 @@ class Shirts extends React.Component {
                                 this.state.check4 == true ?
                                     <div className="main_first_shirt_onClick">
                                         <div className="first_shirt_click">
-                                            <Link><img src={img} />
+                                            <Link className="link"><img src={img} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
                                         </div>
                                         <div className="first_shirt_click">
-                                            <Link><img src={img} />
+                                            <Link className="link"><img src={img} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
                                         </div>
                                         <div className="first_shirt_click">
-                                            <Link><img src={img} />
+                                            <Link className="link"><img src={img} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
                                         </div>
                                         <div className="first_shirt_click">
-                                            <Link><img src={img} />
+                                            <Link className="link"><img src={img} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
                                         </div>
                                         <div className="first_shirt_click">
-                                            <Link><img src={img} />
+                                            <Link className="link"><img src={img} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>
                                         </div>
                                         <div className="first_shirt_click">
-                                            <Link><img src={img} />
+                                            <Link className="link"><img src={img} />
                                             <h4>Mast & Harbour</h4>
                                             <p>Men Slim Fit casual sustainable</p>
                                             <p><span>Rs.1200</span> <del>Rs.2200</del><mark>(Rs.1000) OFF</mark></p></Link>

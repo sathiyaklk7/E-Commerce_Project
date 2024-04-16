@@ -174,9 +174,9 @@ p,h4{
     display: flex;
     justify-content: space-around;
 }
-/* Link{
+Link{
     text-decoration: none;
-} */
+}
 .mencontent1{
     background-color: #f5dcdc5a;
     width: 280px;
