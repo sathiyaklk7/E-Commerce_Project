@@ -174,8 +174,23 @@ p,h4{
     display: flex;
     justify-content: space-around;
 }
+.mencontent1 .logo{
+    width: 200px;
+    height: 40px;
+}
+.mencontent1 .logo2{
+    width: 130px;
+    height: 50px;
+}
+.mencontent1 .only{
+    height: 70px;
+}
 Link{
     text-decoration: none;
+}
+.menflex .womencontents{
+    height: 860px;
+
 }
 .mencontent1{
     background-color: #f5dcdc5a;
@@ -363,3 +378,4 @@ Link{
     padding: 100px;
     margin-top: -150px;
 }
+

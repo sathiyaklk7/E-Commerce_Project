@@ -12,7 +12,29 @@ import fb from '../Imgaes/men/fb.jpeg'
 import demoimg from "../Imgaes/car.jpg"
 import { Link } from "react-router-dom";
 // logo
-import Biba from "../Imgaes/women/logo/biba.webp"
+import Biba from "../Imgaes/women/logo/biba.webp";
+import Mark from "../Imgaes/women/logo/marker_spencer.png"
+import Nike from "../Imgaes/women/logo/Nike1.png"
+import Forever_21 from "../Imgaes/women/logo/forever_21.png"
+import Levis from "../Imgaes/women/logo/levis.png"
+import Only from "../Imgaes/women/logo/only.png"
+import Puma from "../Imgaes/women/logo/puma.png"
+import W from "../Imgaes/women/logo/w.png"
+// images
+import img1 from "../Imgaes/women/images/biba.webp"
+import img2 from "../Imgaes/women/images/mark&spencers.avif"
+import img3 from "../Imgaes/women/images/nike.jpg"
+import img4 from "../Imgaes/women/images/forever21.jpg"
+import img5 from "../Imgaes/women/images/levis.avif"
+import img6 from "../Imgaes/women/images/onlyoffical.jpg"
+import img7 from "../Imgaes/women/images/puma.avif"
+import img8 from "../Imgaes/women/images/W.webp"
+import moss from "../Imgaes/women/images2/moss&melage.jpg"
+import mod from "../Imgaes/women/images2/mod.webp"
+import eco from "../Imgaes/women/images2/ecosriendly.jpeg"
+import redtop from "../Imgaes/women/images2/redtops.avif"
+import regal from "../Imgaes/women/images2/regalmustard.webp"
+import smart from "../Imgaes/women/images2/smartdailywear.jpg"
 // import video
 import Female from "./women_video";
 // slider
@@ -74,36 +96,36 @@ class Women extends React.Component {
 
                 <h2 className="biggest">biggest deals on top brands</h2>
                 <div className="menflex">
-                    <div className="mencontent1">
-                        <Link><img src={demoimg} /></Link>
-                        <img src={Biba} />
+                    <div className="mencontent1 womencontents">
+                        <Link><img src={img1} /></Link>
+                        <img className="logo" src={Biba} />
                         <h4>30-60% Off</h4>
-                        <Link><img className="img2men" src={demoimg} /></Link><br />
-                        <Link><img style={{ width: "100px", height: '20px' }} src={Onshophy} /></Link>
+                        <Link><img className="img2men" src={img5} /></Link><br />
+                        <Link><img className="logo2" src={Levis} /></Link>
                         <h4>Up To 50% Off</h4>
                     </div>
-                    <div className="mencontent1">
-                        <Link><img src={demoimg} /></Link>
-                        <p>Levis</p>
+                    <div className="mencontent1 womencontents">
+                        <Link><img src={img2} /></Link>
+                        <img className="logo" src={Mark} />
                         <h4>Min.40 % Off</h4>
-                        <Link><img className="img2men" src={demoimg} /></Link><br />
-                        <Link><img style={{ width: "100px", height: '20px' }} src={Onshophy} /></Link>
+                        <Link><img className="img2men" src={img6} /></Link><br />
+                        <Link><img className="logo2 only" src={Only} /></Link>
                         <h4>30-70% Off</h4>
                     </div>
-                    <div className="mencontent1">
-                        <Link><img src={demoimg} /></Link>
-                        <p>TOMMY HILIFIER</p>
+                    <div className="mencontent1 womencontents">
+                        <Link><img src={img3} /></Link>
+                        <img className="logo" src={Nike} />
                         <h4>30-50% Off</h4>
-                        <Link><img className="img2men" src={demoimg} /></Link><br />
-                        <Link><img style={{ width: "100px", height: '20px' }} src={Onshophy} /></Link>
+                        <Link><img className="img2men" src={img7} /></Link><br />
+                        <Link><img className="logo2" src={Puma} /></Link>
                         <h4>Up To 40% Off</h4>
                     </div>
-                    <div className="mencontent1">
-                        <Link><img src={demoimg} /></Link>
-                        <p>UNITED COLORS</p>
+                    <div className="mencontent1 womencontents">
+                        <Link><img src={img4} /></Link>
+                        <img className="logo" src={Forever_21} />
                         <h4>40-70% Off</h4>
-                        <Link><img className="img2men" src={demoimg} /></Link><br />
-                        <Link> <img style={{ width: "100px", height: '20px' }} src={Onshophy} /></Link>
+                        <Link><img className="img2men" src={img8} /></Link><br />
+                        <Link> <img className="logo2" src={W} /></Link>
                         <h4>Up To 50% Off</h4>
                     </div>
                 </div>
@@ -123,28 +145,28 @@ class Women extends React.Component {
                 <h2 className="biggest">catergories to bag</h2>
                 <div className="ctb">
                     <div className="ctb1">
-                        <Link><img src={demoimg} /></Link>
+                        <Link><img src={moss} /></Link>
                         <p style={{ textTransform: 'uppercase' }}> Moss & Melange</p>
                     </div>
                     <div className="ctb1">
-                        <Link><img src={demoimg} /></Link>
+                        <Link><img src={mod} /></Link>
                         <p style={{ textTransform: 'uppercase' }}>Mod Blocking</p>
                     </div>
                     <div className="ctb1">
-                        <Link> <img src={demoimg} /></Link>
+                        <Link> <img src={redtop} /></Link>
                         <p style={{ textTransform: 'uppercase' }}> Red Top & Tees</p>
                     </div>
                     <div className="ctb1">
-                        <Link><img src={demoimg} /></Link>
+                        <Link><img src={smart} /></Link>
                         <p style={{ textTransform: 'uppercase' }}> Smart Daily Wear Tees</p>
                     </div>
                     <div className="ctb1">
-                        <Link><img src={demoimg} /></Link>
-                        <p style={{ textTransform: 'uppercase' }}> Eco </p>
+                        <Link><img src={eco} /></Link>
+                        <p style={{ textTransform: 'uppercase' }}> Eco-Friendly Style </p>
                     </div>
                     <div className="ctb1">
-                        <Link><img src={demoimg} /></Link>
-                        <p style={{ textTransform: 'uppercase' }}> Infant Essentials</p>
+                        <Link><img src={regal} /></Link>
+                        <p style={{ textTransform: 'uppercase' }}> Regal Mustard</p>
                     </div>
                 </div>
                 <h2 className="biggest">trending in indian wear</h2>
